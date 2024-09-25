@@ -1,0 +1,26 @@
+##BMI Calculator
+
+#BMI = (weight in pounds x 703) / (height in inches x height in inches)
+
+
+name = input("Unesite svoje ime: ")
+weight = int(input("Unesite svoju tezinu u poundsima: "))
+height = int(input("Unesite svoju visinu u incima: "))
+
+BMI = (weight * 703) / (height * height)
+
+print(BMI)
+
+if BMI>0:
+    if (BMI<18.5):
+        print("Pothranjeni ste, " + name)
+    elif(BMI<=24.9):
+        print("Normalne ste tezine, " + name)
+    elif(BMI<=34.9):
+        print("Povecane ste tjelesne tezine, " + name)
+    elif(BMI<=39.9):
+        print("Pretili ste, " + name)
+    else:
+        print("Imate veliki problem s debljinom, " + name)
+else:
+        print("Unesite ispravnu vrijednost.")
